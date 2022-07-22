@@ -44,9 +44,11 @@ $White: hsl(0, 0%, 100%);
     margin: 0 auto;
     
     @media only screen and (max-width: 1250px) {
+        max-width: 90%;
     }
 
     @media only screen and (max-width: 600px) {
+        max-width: 96%;
     }
 }
 
