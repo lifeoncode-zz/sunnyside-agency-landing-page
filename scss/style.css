@@ -6,6 +6,7 @@
   padding: 0;
   scroll-behavior: smooth;
   font-family: 'Barlow', sans-serif;
+  font-weight: 400;
 }
 
 ::-webkit-scrollbar {
@@ -26,15 +27,241 @@
   margin: 0 auto;
 }
 
-@media only screen and (max-width: 1250px) {
-  .container {
-    max-width: 90%;
-  }
+h1 {
+  font-size: 40px;
 }
 
-@media only screen and (max-width: 600px) {
-  .container {
-    max-width: 95%;
-  }
+h2 {
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 25px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 16px;
+}
+
+p {
+  line-height: 1.4;
+  font-size: 16px;
+}
+
+header {
+  background-image: url("../images/desktop/image-header.jpg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: bottom;
+  background-size: cover;
+  padding: 20px;
+  height: 90vh;
+}
+
+header .top-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 80px;
+}
+
+header .top-panel nav a {
+  display: inline-block;
+  margin-right: 40px;
+  color: white;
+}
+
+header .top-panel nav .btn {
+  margin: 0;
+  border-radius: 30px;
+  padding: 15px 30px;
+  background-color: white;
+  color: #23303e;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+header .top-panel nav .btn:hover {
+  background-color: rgba(0, 221, 255, 0.682);
+  color: white;
+}
+
+header .text {
+  text-align: center;
+}
+
+header .text h1 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.features {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0px;
+}
+
+.features img {
+  display: block;
+  width: 100%;
+}
+
+.features .text {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 0 100px;
+}
+
+.features .text .heading {
+  color: #23303e;
+}
+
+.features .text p {
+  margin: 40px 0;
+  color: #5a636c;
+}
+
+.features .service {
+  position: relative;
+}
+
+.features .service img {
+  opacity: 0.7;
+}
+
+.features .service.a {
+  color: #25564b;
+}
+
+.features .service.b {
+  color: #19536b;
+}
+
+.features .service div {
+  position: absolute;
+  bottom: 50px;
+  padding: 0 100px;
+  text-align: center;
+}
+
+.features .service div .heading {
+  margin-bottom: 40px;
+}
+
+.testimonials {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.testimonials .heading {
+  margin-bottom: 30px;
+}
+
+.testimonials .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+}
+
+.testimonials .container .card .photo {
+  overflow: hidden;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.testimonials .container .card .photo img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.testimonials .container .card .heading {
+  color: #23303e;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.testimonials .container .card p {
+  margin: 40px 0;
+  color: #5a636c;
+}
+
+.testimonials .container .card .title {
+  font-size: 12px;
+  color: #5a636c;
+  opacity: 0.5;
+}
+
+.gallery {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0px;
+}
+
+.gallery img {
+  display: block;
+  width: 100%;
+}
+
+footer {
+  text-align: center;
+  padding: 100px 0;
+  background-color: #458c7e;
+}
+
+footer .nav {
+  margin: 50px 0;
+}
+
+footer .nav a {
+  display: inline-block;
+  font-size: 16px;
+  color: #25564b;
+  opacity: 0.7;
+}
+
+footer .nav a:nth-of-type(2) {
+  margin: 0 50px;
+}
+
+footer .social i {
+  color: #25564b;
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 50px;
+}
+
+footer .social i:last-child {
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */
